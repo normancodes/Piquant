@@ -1,0 +1,225 @@
+body{
+    /* background-color: #1B191C; */
+    background-color: #262626;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    text-align: center;
+}
+
+.navbar{
+  z-index: 1;
+}
+
+.navbar-custom {
+background-color: #AA0124;
+padding: 2.5vh 10% 2.5vh 0;
+font-family: 'Lato', sans-serif;
+width: 100%;
+margin-top: 7vh;
+}
+
+.nav-item{
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+font-size: 115%;
+padding-right: 15%;
+}
+
+.middle{
+  background-color: #fff;
+  margin: 0;
+  /* height: 100%; */
+  padding-top: 3%;
+  padding-bottom: 1.5%;
+}
+
+.bottom{
+  text-align: left;
+  background-color: #262626;
+  border-color: #AA0124;
+  border-style: solid;
+  border-width: 4px 0 0 0;
+  /* height: 100%; */
+  padding-top: 2%;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 1% 0;
+  width: 100%;
+  /* height: 100%; */
+  display: block;
+  /* background-color: #fff; */
+  align-items: center;
+
+}
+
+.carousel-item{
+  padding-bottom: 3%;
+}
+
+.carousel-inner > .carousel-item > img {
+  margin: 0 auto;
+}
+
+.container-fluid{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: block;
+}
+
+.row-a{
+width: 100%;
+height: 100%;
+display: flex;
+}
+
+.feature{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* Modify brand and text color */
+
+.navbar-custom .navbar-brand{
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-left: 15%;
+  letter-spacing: .25rem;
+}
+
+sup{
+  font-size: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+
+}
+
+.bg{
+
+  height: 70vh;
+  width: 100%;
+}
+
+.feature-box{
+  padding: 0;
+  margin: 0;
+  opacity: .4;
+  display: block;
+}
+
+.feature-box-2{
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+}
+
+/* img{
+  display: block;
+} */
+
+.heading{
+  /* Centered text */
+  position: relative;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  color: white;
+  font-size: 4.5vw;
+  letter-spacing: .4rem;
+  font-weight: lighter;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.btn-danger{
+  position: relative;
+  top: -59%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: block;
+  background-color: #AA0124;
+  border: none;
+  padding: .75% 1.5%;
+  letter-spacing: 2px;
+}
+
+.card-img-top{
+  height: 200px;
+}
+
+.btn:hover{
+  background-color: #AA0124;
+}
+
+
+.btn{
+  color: white;
+}
+
+.new{
+position: relative;
+display: flex;
+background-color: white;
+}
+
+.logo{
+  position: relative;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-left: 15%;
+  letter-spacing: .25rem;
+}
+
+.logo:hover{
+  color: #000;
+  text-decoration: none;
+}
+
+.my-3{
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+  transform: translateX(0);
+}
